@@ -1,0 +1,23 @@
+{
+  "name": "create_package",
+  "bin": {
+    "create": "index.js"
+  },
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaelLuo/create_package.git"
+  },
+  "author": "LaelLuo",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/LaelLuo/create_package/issues"
+  },
+  "homepage": "https://github.com/LaelLuo/create_package#readme",
+  "devDependencies": {}
+}

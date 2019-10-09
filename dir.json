@@ -1,0 +1,110 @@
+{
+    "./": {
+        "description": "本文件夹",
+        "files": {
+            "README.md": {
+                "content": "Hello",
+                "description": "项目介绍"
+            },
+            "lib/": {
+                "description": "dart libraries",
+                "files": {
+                    "generated/": {
+                        "description": "",
+                        "files": {
+                            "data/": {
+                                "description": "",
+                                "files": {
+                                    "response/": {
+                                        "description": "",
+                                        "files": {}
+                                    },
+                                    "request/": {
+                                        "description": "",
+                                        "files": {}
+                                    }
+                                }
+                            },
+                            "i18n/": {
+                                "description": "",
+                                "files": {}
+                            }
+                        }
+                    },
+                    "src/": {
+                        "description": "dart源码",
+                        "files": {
+                            "global/": {
+                                "description": "全局对象",
+                                "files": {}
+                            },
+                            "pages/": {
+                                "description": "页面对象",
+                                "files": {}
+                            },
+                            "utils/": {
+                                "description": "工具",
+                                "files": {
+                                    "network/": {
+                                        "description": "网络工具",
+                                        "files": {}
+                                    },
+                                    "sharePreference/": {
+                                        "description": "sp工具",
+                                        "files": {}
+                                    }
+                                }
+                            },
+                            "widgets/": {
+                                "description": "组件",
+                                "files": {}
+                            }
+                        }
+                    }
+                }
+            },
+            "res/": {
+                "description": "项目相关资源",
+                "files": {
+                    "i18n_arb/": {
+                        "description": "arb文件",
+                        "files": {}
+                    },
+                    "data_jsons/": {
+                        "description": "data class json",
+                        "files": {}
+                    }
+                }
+            },
+            "utils/": {
+                "description": "命令行工具",
+                "files": {
+                    "extract_to_arb.bat": {
+                        "content": {},
+                        "description": ""
+                    },
+                    "extract_to_arb.sh": {
+                        "content": {},
+                        "description": ""
+                    },
+                    "generate_from_arb.bat": {
+                        "content": {},
+                        "description": ""
+                    },
+                    "generate_from_arb.sh": {
+                        "content": {},
+                        "description": ""
+                    },
+                    "json_to_model.bat": {
+                        "content": {},
+                        "description": ""
+                    },
+                    "json_to_model.sh": {
+                        "content": {},
+                        "description": ""
+                    }
+                }
+            }
+        }
+    }
+}
