@@ -1,8 +1,8 @@
 {
   "name": "create_package",
   "bin": {
-    "create_1": "index.js",
-    "create": "index_2.js"
+    "create": "index.js",
+    "createOld": "index_old.js"
   },
   "version": "1.0.0",
   "description": "",
