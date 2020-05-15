@@ -1,0 +1,12 @@
+{
+    "lib": {
+        "src": {
+            "global":{
+                "user_info_provider.dart":"data_model"
+            },
+            "pages": {
+                "home":["dart","page","view_model"]
+            }
+        }
+    }
+}

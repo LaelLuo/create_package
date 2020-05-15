@@ -8,6 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "启动程序",
+            "args": ["./dir_2.json"],
             "program": "${workspaceFolder}\\index_2.js"
         }
     ]
