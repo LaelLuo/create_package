@@ -5,7 +5,7 @@ const fs = require('fs'),
     path = args[1] ? args[1] : '.',
     debug = true,
     log = (argv) => {
-        if (debug) console.log(argv); else { }
+        if (debug) { console.log(argv); } else { }
     },
     data = JSON.parse(fs.readFileSync(json).toString()),
     keys = Object.keys(data)
