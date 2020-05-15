@@ -23,11 +23,14 @@ deal(filePath, data)
 // print(transformStr('home_view_model'))
 
 function deal(key, node) {
-    print(`key: ${key}`)
+    // print(`key: ${key}`)
     // print(`node: ${JSON.stringify(node, null, '\t')}`)
     if (node instanceof Array) {
         //文件夹不存在则创建
-        if (!exists(key)) fs.mkdirSync(key)
+        if (!exists(key)) {
+            fs.mkdirSync(key)
+            print(`创建文件夹: ${key}`)
+        }
         const ext = node[0]
         for (let index = 1; index < node.length; index++) {
             const type = node[index];
@@ -43,6 +46,8 @@ function deal(key, node) {
             deal(path.join(key, childKey), node[childKey])
         })
     } else {
+        if (exists(key)) return
+        print(`创建文件: ${key}`)
         processList.forEach((processor) => {
             if (processor.canProcess(key, node)) node = processor.process(key, node)
         })
