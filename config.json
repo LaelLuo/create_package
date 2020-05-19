@@ -1,0 +1,6 @@
+{
+    ".dart": {
+        "widget": "import 'package:flutter/material.dart';\n        import 'package:aquakiss/src/utils/ui/screen_adapter.dart';\n        \n        class %bigHump% extends StatelessWidget {\n            @override\n            Widget build(BuildContext context) {\n                return Scaffold();\n            }\n        }",
+        "":""
+    }
+}

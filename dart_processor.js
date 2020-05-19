@@ -16,16 +16,17 @@ class DartProcessor extends Processor {
      * @param {String} data
      */
     process(fileName, data) {
-        const className = transformStr(path.parse(fileName).name);
+        const smallHump = transformStr(path.parse(fileName).name);
+        const bigHump = smallHump[0].toUpperCase() + smallHump.substr(1);
         if (data === 'page' || data === 'widget') {
             return `
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:aquakiss/src/utils/ui/screen_adapter.dart';
 
-class ${className} extends StatelessWidget {
+class ${bigHump} extends StatelessWidget {
     @override
     Widget build(BuildContext context) {
-        return Container();
+        return Scaffold();
     }
 }
                 `;
@@ -34,13 +35,13 @@ class ${className} extends StatelessWidget {
             return `
 import 'package:flutter/foundation.dart';
 
-class ${className} with ChangeNotifier {
+class ${bigHump} with ChangeNotifier {
 
 }
                 `;
         }
         else {
-            return `class ${className} {}`;
+            return `class ${bigHump} {}`;
         }
     }
 }
@@ -54,5 +55,5 @@ exports.DartProcessor = DartProcessor;
 function transformStr(string) {
     const regExp = /_(\w)/g;
     let result = string.replace(regExp, ($0, $1) => $1.toUpperCase());
-    return result[0].toUpperCase() + result.substr(1)
+    return result;
 }

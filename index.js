@@ -6,7 +6,7 @@ const { DartProcessor } = require("./dart_processor")
 const args = process.argv.slice(2)
 if (args.length < 1 || !args[0].endsWith('.json')) throw "未找到json文件"
 const json = args[0]
-const filePath = args[1] || __dirname
+const filePath = args[1] || '.'
 
 const fs = require('fs')
 const path = require('path')
